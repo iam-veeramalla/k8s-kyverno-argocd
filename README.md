@@ -7,6 +7,13 @@
 
 ## Installation
 
+To setup this project you need to install Argo CD controller and Kyverno controller, Assuming you have Kubernetes installed.
+
+Installation of both Kyverno and Argo CD are pretty straight forward as both of them support Helm charts and also provide a consolidated 
+installation yaml files. 
+
+### Kyverno
+
 There are two easy ways to install kyverno:
 
 ![image](https://user-images.githubusercontent.com/43399466/219931795-dce93e3b-9f78-42ef-ba5e-9aa685252e2f.png)
@@ -52,6 +59,14 @@ helm install kyverno kyverno/kyverno -n kyverno --create-namespace --version 2.6
 ```
 kubectl create -f https://github.com/kyverno/kyverno/releases/download/v1.8.5/install.yaml
 ```
+
+### Argo CD
+
+There are three ways to install Argo CD
+
+1. `kubectl apply -f https://raw.githubusercontent.com/argoproj/argo-cd/master/manifests/install.yaml`
+2. Helm Charts, Follow the [link](https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd#installing-the-chart) 
+3. Using the Argo CD Operator, Follow the [link](https://argocd-operator.readthedocs.io/en/latest/install/olm/)
 
 ## Demystifying Kyverno Policies 
 
