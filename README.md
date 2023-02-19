@@ -1,7 +1,6 @@
-# k8s-kyverno-argocd
+# Enforce Automated k8s cluster security using kyverno policy generator and argocd
 
-Demo repository to enforce automated k8s cluster security using kyverno policy generator and argocd
-
+## High Level Design
 
 ![Screenshot 2023-02-19 at 12 40 48 PM](https://user-images.githubusercontent.com/43399466/219934201-b542599a-7f8a-4b72-a1bf-5db6ba1bfade.png)
 
